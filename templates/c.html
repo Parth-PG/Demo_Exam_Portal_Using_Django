@@ -1,0 +1,31 @@
+{% load static %}
+<html>
+<head>
+<link rel = 'stylesheet' type = 'text/css' href ={% static "style.css" %}>
+</head>
+<body>
+<div id = 'menu'>
+<ul>
+<li><a href = {% url 'home' %} > Home </a></li>
+<li><a href = {% url 'c' %} > C/C++ </a></li>
+<li><a href = {% url 'java' %} > JAVA </a></li>
+<li><a href = {% url 'python' %} > Python </a></li>
+<li> Contact </li>
+<li> About </li>
+</ul>
+</div>
+<h1> C/C++ programming interview QnA</h1>
+{% for i in da %}
+{% if i.lang == 'c' %}
+<table cellpadding = '12'>
+<tr>
+<td>{{i.question}}</td>
+</tr>
+<tr>
+<td>{{i.ans}}</td>
+</tr>
+</table>
+{% endif %}
+{% endfor %}
+</body>
+</html>

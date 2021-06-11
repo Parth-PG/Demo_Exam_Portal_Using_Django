@@ -1,0 +1,30 @@
+{% load static %}
+<html>
+<head>
+<link rel = 'stylesheet' type = 'text/css' href ={% static "style.css" %}>
+</head>
+<body>
+<div id = 'menu'>
+<ul>
+<li><a href = {% url 'home' %} > Home </a></li>
+<li><a href = {% url 'c' %} > C/C++ </a></li>
+<li><a href = {% url 'java' %} > JAVA </a></li>
+<li><a href = {% url 'python' %} > Python </a></li>
+<li> Contact </li>
+<li> About </li>
+</ul>
+</div>
+<h1> Home Page </h1>
+<table cellpadding = '12'>
+{% for i in da %}
+<tr>
+<td>{{i.Roll_No}}</td>
+<td>{{i.Name}}</td>
+<td>{{i.Phy_Marks}}</td>
+<td>{{i.Chem_Marks}}</td>
+<td>{{i.Math_Marks}}</td>
+{% endfor %}
+</tr>
+</table>
+</body>
+</html>

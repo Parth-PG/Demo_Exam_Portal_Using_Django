@@ -1,0 +1,20 @@
+#1 installing django
+ pip install django
+
+#2 create a project
+ djando-admin startproject project_name
+
+#3 start the server
+ py manage.py runserver
+(copy and paste the link in the browser to start the server)
+
+#4 stop a server
+  ctrl + c
+
+#5 create an app
+ py manage.py startapp app_name
+
+#6  for adding admin
+ py manage.py makemigrations
+ py manage.py migrate  
+ py manage.py createsuperuser

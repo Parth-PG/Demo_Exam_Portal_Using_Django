@@ -1,0 +1,18 @@
+#menu{
+background-color : rgba(0,0,0,0.8);
+color : white;
+text-align : right;
+}
+#menu ul li{
+display : inline-block;
+padding : 12px;
+}
+
+a:visited{
+color : white;
+}
+
+table{
+width:1000px;
+box-shadow:10px 10px 10px black;
+}
